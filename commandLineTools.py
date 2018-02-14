@@ -13,7 +13,7 @@ def getArgs():
 	
 	parser = argparse.ArgumentParser(description='Basic command line program')
 
-	parser.add_argument('-f', '--file', action='store_true', help='Writes results to a file (must provide a file name)')
+	parser.add_argument('-f', '--file', nargs='?', help='Writes results to a file (must provide a file name)')
 
 	group = parser.add_mutually_exclusive_group()
 	group.add_argument('-g', '--greet', action='store_true', help='Print generic greeting')
